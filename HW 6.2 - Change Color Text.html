@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Change Color Text </title>
+
+    <script>
+        function back(str)
+        {
+            var text = document.getElementById(str);
+            textval = text.value;
+            text.style.color = "black";
+        }
+
+        function green(str)
+        {
+            var text = document.getElementById(str);
+            textval = text.value;
+            
+            if(textval != "")
+            {
+                text.style.color = "green";
+            }
+        }  
+    </script>
+    
+</head>
+
+<body>
+
+    <!-- Name -->
+    <div>
+        <label>Name : </label>
+        <input type="text" id="ch1" onfocusout="green('ch1')" onfocusin="back('ch1')">
+    </div> <br>
+
+    <!-- Age -->
+    <div>
+        <label> Age : </label>
+        <input type="text" id="ch2" onfocusout="green('ch2')" onfocusin="back('ch2')">
+    </div> <br>
+
+    <!-- Birthdate -->
+    <div>
+        <label> Birthdate : </label>
+        <input type="text" id="ch3" onfocusout="green('ch3')" onfocusin="back('ch3')">
+    </div> <br>
+
+</body>
+</html>

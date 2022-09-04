@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <script>
+        function sum()
+        {
+            var n1 = parseFloat(document.getElementById('num1').value)
+            var n2 = parseFloat(document.getElementById('num2').value)
+            var sum = document.getElementById("option").value
+
+            if(sum =='+')
+            {
+                document.getElementById('num3').value= n1 + n2;
+            }
+            else if(sum =='-')
+            {
+                document.getElementById('num3').value= n1 - n2;
+            }
+            else if(sum =='*')
+            {
+                document.getElementById('num3').value= n1 * n2;
+            }
+            else if(sum =='/')
+            {
+                document.getElementById('num3').value= n1 / n2;
+            }
+        }
+    </script>
+    
+</head>
+
+<body>
+
+    <p><input type="text" id="num1" name="num1"  size="5">
+        
+        <select id="option">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+    <input type="text" id="num2"name="num2" size="5" > =
+    <input type="text" id="num3"name="num3" size="5" >
+
+    <input type="button" id="button" value="com" onclick="sum()"></p>
+    
+</body>
+</html>

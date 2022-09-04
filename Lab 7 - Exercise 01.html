@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        
+        <script>
+            function add()
+            {
+                var input1 = document.getElementById("n1");
+                var input2 = document.getElementById("n2");
+                var input3 = document.getElementById("n3");
+                input3.value = Number.parseInt(input1.value) + Number.parseInt(input2.value);
+            }
+        </script>
+
+    </head>
+
+    <body>
+
+        <input type="text" id="n1" size="5"> +
+        <input type="text" id="n2" size="5"> =
+        <input type="text" id="n3" size="5">
+        <input type="button" onclick="add()" value="Go Go">
+
+    </body>
+</html>
